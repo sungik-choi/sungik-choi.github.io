@@ -1,29 +1,31 @@
 // Colors
-$default-color: #555;
-$default-shade: #353535;
+$default-color: #24292e;
+$default-shade: #24292e;
 $default-tint: #aaa;
-$grey-1: #979797;
+$grey-0: #81878b;
+$grey-1: #6a737d;
 $grey-2: #e5e5e5;
 $grey-3: #f9f9f9;
 $white: #fff;
-$blue: #4a9ae1;
-$shadow-color: rgba(0, 0, 0, .2);
-$code-color: #bf616a;
+$blue: #0366d6;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$code-bg: #f6f8fa;
+// $code-color: #ff9940;
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-$monospaced: Menlo, Monaco, monospace;
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
+$sans-serif: -apple-system, BlinkMacSystemFont, "Spoqa Han Sans", HelveticaNeue, Helvetica, "NanumGothic", "맑은 고딕", "Malgun Gothic", arial, sans-serif, "Source Sans Pro", sans-serif;
+$monospaced: SFMono-Regular, "IBM Plex Mono", Consolas, Liberation Mono, Menlo, monospace;
 
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
-     -moz-box-sizing: $type;
-          box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
 }
 
 @mixin transition($args...) {
   -webkit-transition: $args;
-     -moz-transition: $args;
-          transition: $args;
+  -moz-transition: $args;
+  transition: $args;
 }

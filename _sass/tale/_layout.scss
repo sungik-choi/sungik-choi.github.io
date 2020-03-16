@@ -10,7 +10,7 @@ footer,
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  width: 80%;
+  width: 90%;
 }
 
 .nav {
@@ -20,34 +20,37 @@ footer,
   &-container {
     margin: 1rem auto;
     position: relative;
-    text-align: center;
   }
 
   &-title {
-    @include transition(all .2s ease-out);
+    @include transition(opacity 0.2s ease-out);
     color: $default-color;
     display: inline-block;
+    border-bottom: none;
     margin: 0;
-    padding-right: .2rem;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
 
     &:hover,
     &:focus {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 
   ul {
     list-style-type: none;
-    margin: 1rem 0 0;
+    margin: 1rem 0 0 0;
     padding: 0;
-    text-align: center;
   }
 
   li {
-    @include transition(all .2s ease-out);
-    color: $default-color;
+    @include transition(opacity 0.2s ease-out);
+    color: $default-shade;
     display: inline-block;
-    opacity: .6;
+    font-size: 1.0625rem;
+    line-height: 0;
+    opacity: 0.6;
     padding: 0 2rem 0 0;
 
     &:last-child {
@@ -67,26 +70,26 @@ footer,
 }
 
 @media (min-width: 600px) {
-  .nav {
-    &-container {
-      text-align: left;
-    }
+  // .nav {
+  // &-container {
+  //   text-align: left;
+  // }
 
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
-    }
-  }
+  // ul {
+  //   //   bottom: 0;
+  //   //   position: absolute;
+  //   //   left: 0;
+  //   // }
+  // }
 }
 
 footer {
-  font-family: $serif-secondary;
+  font-family: $sans-serif;
   padding: 2rem 0;
   text-align: center;
 
   span {
     color: $default-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
